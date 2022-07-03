@@ -6,5 +6,5 @@ def run(input_files, **kwargs):
     y = x.iloc[:, kwargs["label_columns"]]
     x.drop(y.columns, axis=1, inplace=True)
     # TODO UT需要，写完填充节点后删除
-    x = x.fillna(value=0)
+    # x = x.fillna(value=0)
     return x, y
